@@ -1,0 +1,229 @@
+#include "../lang.h"
+#include "version.rc"
+
+#pragma code_page(65001)
+LANGUAGE LANG_CHINESE, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_SHORTNAME                       "zh"
+    IDS_NAME                            "Chinese"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DLG_OK                          "确定"
+    IDS_DLG_CANCEL                      "取消"
+    IDS_DLG_APPLY                       "应用"
+    IDS_DLG_DEFAULT                     "默认"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR                           "错误"
+    IDS_YESNO                           "你确定要这么做?"
+    IDS_INFO                            "信息"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_CHECKINGFORUPDATES          "TrayEverything 正在查找更新,请等待."
+END
+
+//Splashscreen
+STRINGTABLE
+BEGIN
+    IDS_SS_CHECKINGMUTEX                "校验实例"
+    IDS_SS_INTERFACE                    "创建实例"
+    IDS_SS_OPTIONS                      "恢复选项"
+END
+
+//Toolbar
+STRINGTABLE
+BEGIN
+    IDS_TB_TRAY                         "托盘"
+    IDS_TB_SETTINGS                     "选项"
+    IDS_TB_MINIMIZE                     "最小化"
+    IDS_TB_UPDATE                       "更新"
+    IDS_TB_CHECKINGUPD                  "校验中..."
+    IDS_TB_TOPMOST                      "置顶"
+    IDS_TB_ABOUT                        "关于"
+    IDS_TB_EXIT                         "退出"
+END
+
+//Windows listview
+STRINGTABLE
+BEGIN
+    IDS_WL_WINDOWNAME                   "窗口名称"
+    IDS_WL_STATUS                       "状态"
+    IDS_WL_FILENAME                     "文件名称"
+    
+    IDS_WL_VISIBLE                      "可见"
+    IDS_WL_MINIMIZED                    "最小化"
+    
+    IDS_WL_MENU_MINIMIZE                "最小化到系统托盘"
+    IDS_WL_MENU_RESTORE                 "恢复"
+    IDS_WL_MENU_PROPS                   "属性"
+END
+
+//Status bar
+STRINGTABLE
+BEGIN
+    IDS_SB_TRAY                         "在这里你可以把任意窗口最小化到系统托盘中去"
+    IDS_SB_SETTINGS                     "TrayEverything 的设置"
+    IDS_SB_MINIMIZE                     "最小化 TrayEverything 到系统托盘"
+    IDS_SB_UPDATE                       "查找更新"
+    IDS_SB_TOPMOST                      "将 TrayEverything 窗口置顶"
+    IDS_SB_ABOUT                        "TrayEverything 相关信息"
+    IDS_SB_EXIT                         "退出 TrayEverything"
+    IDS_SB_READY                        "准备"
+    
+    IDS_SB_WL_MINIMIZE                  "双击最小化 '%s'"
+    IDS_SB_WL_RESTORE                   "双击恢复 '%s'"
+    
+    IDS_SB_WINDOWSCOUNT                 "%d 窗口"
+END
+
+//Options dlg
+STRINGTABLE
+BEGIN
+    IDS_OPT_TAB_GEN                     "常规"
+    IDS_OPT_TAB_TRAY                    "托盘1"
+    IDS_OPT_TAB_TRAY2                   "托盘2"
+    IDS_OPT_TAB_PROGRAMS                "Programs"
+    IDS_OPT_TAB_HK                      "热键"
+    
+    IDS_OPTS_WINDOWSSTART               "随 Windows 启动"
+    IDS_OPTS_UPD_CHECK                  "查找更新"
+    IDS_OPTS_UPD_CHECK_EVERYSTART       "每次启动"
+    IDS_OPTS_UPD_CHECK_EVERYDAY         "每天"
+    IDS_OPTS_UPD_CHECK_WEEKLY           "每周"
+    IDS_OPTS_LANGUAGE                   "语言"
+    
+    IDS_OPTS_MINONCLOSE                 "点击关闭按钮最小化 TrayEverything"
+    IDS_OPTS_HIDEONMIN                  "TrayEverything 最小化时隐藏它的系统托盘图标"
+    IDS_OPTS_HIDEONMIN_HELP             "按 Win+T 键恢復TrayEverything"
+    IDS_OPTS_OTHERPROGS                 "其他程序"
+    IDS_OPTS_TRAY_NOICON                "最小化窗口不创建托盘图标"
+    IDS_OPTS_TRAY_PWDPROTECT            "密码保护最小化窗口"
+    IDS_OPTS_TRAY_GROUPICON             "把相同程序窗口放到一组"
+    
+    IDS_OPTS_AUTOMINIMIZE               "自动最小化"
+    IDS_OPTS_AUTOMIN                    "多少秒后自动最小化未活动窗口:"
+    IDS_OPTS_AUTOMIN_TYPE_SECS          "秒"
+    IDS_OPTS_AUTOMIN_TYPE_MINS          "分钟"
+    
+    IDS_OPTS_MINFROMPROGRS              "从其他程序最小化"
+    IDS_OPTS_MFP_NONE                   "没有选项"
+    IDS_OPTS_MFP_TRAYBUTTON             "在所有窗口创建一个直接最小化到托盘的按钮"
+    IDS_OPTS_MFP_MINBUTTON              "使用原来的最小化按钮把程序最小化到托盘中去"
+    IDS_OPTS_MFP_MIDDLECLICK            "Minimize on mouse middle click on titlebar"
+    
+    IDS_OPTS_MFP_TRAYBUTTON_TT          "在常规的标题栏按钮处插入一个新的最小化到托盘的按钮"
+    IDS_OPTS_MFP_MINBUTTON_TT           "这个选项让你简单的点击最小化按钮就可以把当前窗口最小化到托盘"
+    
+    IDS_OPTS_PL_ALWAYSMINIMIZE          "Always minimize automatically as soon as it's opened"
+    IDS_OPTS_PL_NEVERMINIMIZE           "Never minimize"
+    IDS_OPTS_PL_NOAUTOMINIMIZE          "Don't auto-minimize automatically"
+    IDS_OPTS_PL_NOTRAYBUTTON            "No new button to minimize to tray"
+    IDS_OPTS_PL_NOHOOKMINBUTTON         "Clicking on the minimize button doesn't mininize to tray"
+    
+    IDS_OPTS_KBHOTKEY                   "热键"
+    
+    IDS_OPTS_CHANGED                    "选项被更改，是否应用？"
+END
+
+//Set/Get password dialog
+STRINGTABLE
+BEGIN
+    IDS_SP_WINDOW                       "设置密码"
+    IDS_GP_WINDOW                       "输入密码"
+
+    IDS_SGP_PWD1                        "密码:"
+    IDS_SGP_PWD2                        "重复密码:"
+   
+    IDS_SGP_ST_ENTERPWD                 "输入一个密码."
+    IDS_SGP_ST_WRONGPWD                 "密码错误!"
+    IDS_SGP_ST_PWDLENGTH                "输入一个最少4位的密码."
+    IDS_SGP_ST_REPEATPWD                "再'重复密码'拦中重复输入你的密码."
+    IDS_SGP_ST_DIFFER                   "你两次输入的密码不相同."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TMENU_RESTORE                   "恢复 %s"
+   
+    IDS_MTMENU_RESTORE                  "恢复 TrayEverything"
+    IDS_MTMENU_OPTIONS                  "设置..."
+    IDS_MTMENU_UPDATE                   "更新..."
+    IDS_MTMENU_ABOUT                    "关于..."
+    IDS_MTMENU_EXIT                     "关闭 TrayEverything"
+END
+
+//Update dlg
+STRINGTABLE
+BEGIN
+    IDS_UD_PERCENTILE                   "进度:"
+    IDS_UD_STATUS                       "状态:"
+    IDS_UD_COMPLETED                    "完成:"
+    IDS_UD_CHECK                        "查找更新"
+    IDS_UD_DOWNLOAD                     "下载更新"
+   
+    IDS_UD_UL_COLUMN1                   "更新"
+    IDS_UD_UL_COLUMN2                   "可用版本"
+    IDS_UD_UL_COLUMN3                   "已安装版本"
+    IDS_UD_UL_COLUMN4                   "大小"
+   
+    IDS_UD_VERSION_NOTFOUND             "没找到版本"
+    IDS_UD_VERSION_NOTINSTALLED         "没有安装"
+   
+    IDS_UD_CHK_ERR_FILECONN             "连接网络失败."
+    IDS_UD_CHK_ERR_FILESTATUS           "不能连接到更新文件. 错误: %d"
+   
+    IDS_UD_ST_READY                     "准备"
+    IDS_UD_ST_FILECONN                  "连接到文件..."
+    IDS_UD_ST_FILESIZE                  "获取文件大小..."
+    IDS_UD_ST_LOCALFILE                 "创建本地文件..."
+    IDS_UD_ST_DOWNLOAD                  "下载中..."
+    IDS_UD_ST_DONE                      "完成."
+   
+    IDS_UD_ERR_FILECONN                 "不能连接到文件.\n错误: %s\n更新: %s"
+    IDS_UD_ERRST_FILECONN               "不能连接到文件."
+    IDS_UD_ERR_HTTPERR                  "连接文件时出错.\n错误: %d\n更新: %s"
+    IDS_UD_ERRST_HTTPERR                "连接文件时出错."
+    IDS_UD_ERR_LOCALFILE                "不能创建本地文件.\n错误: %s\n更新: %s"
+    IDS_UD_ERRST_LOCALFILE              "不能创建本地文件."
+    IDS_UD_ERR_DOWNLOAD                 "下载出错.\n错误: %s\n更新: %s"
+    IDS_UD_ERRST_DOWNLOAD               "下载出错."
+   
+    IDS_UD_PRG                          "已下载 %s 的 %s"
+    IDS_UD_PRG_NOSIZE                   "已下载 %s 的 ???"
+   
+    IDS_UD_MSG_RESETTING                "更新文件下载完毕， TrayEverything 将关闭以便安装更新."
+    IDS_UD_MSG_NOUPDATE                 "没有更新,你使用的已经是最新版本."
+END
+
+//About dialog
+STRINGTABLE
+BEGIN
+    IDS_AD_VERSION                      "版本:"
+    IDS_AD_CHECKUPDATES                 "查找更新"
+    IDS_AD_CREDITS                      "鸣谢"
+    IDS_AD_CREDITS_EXT                  " \x95 图标作者 GANT iConPack\r\n"
+                                        " \x95 气泡提示控件作者 shog9\r\n"
+                                        " \x95 超链接控件作者 Neal Stublen\r\n"
+                                        " \x95 Chinese translation by Yang\r\n"
+                                        " \x95 Japanese translation by Asabukuro\r\n"
+                                        " \x95 Portuguese translation by Cláudio Mantovani Vieira\r\n"
+                                        " \x95 Spanish translation by ikelocho\r\n"
+                                        " \x95 German translation by Puh Patrick Steinke\r\n"
+                                        " \x95 Czech translation by Petr Zikmund (zikmund.petr@gmail.com)"
+   
+    IDS_AD_WEBSITE                      "查看 TrayEverything 的主页: winapizone.net"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_UPDBALLOON_TITLE                "更新"
+    IDS_UPDBALLOON_TEXT                 "发现 TrayEverything 新版可以下载.\n点击提示查看详细信息或者下载安装更新."
+END

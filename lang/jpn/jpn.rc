@@ -1,0 +1,229 @@
+#include "../lang.h"
+#include "version.rc"
+
+#pragma code_page(65001)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_SHORTNAME                       "jp"
+    IDS_NAME                            "Japanese"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DLG_OK                          "OK"
+    IDS_DLG_CANCEL                      "中止"
+    IDS_DLG_APPLY                       "適用"
+    IDS_DLG_DEFAULT                     "デフォルト"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR                           "エラー"
+    IDS_YESNO                           "実行しますか？"
+    IDS_INFO                            "情報"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_CHECKINGFORUPDATES          "TrayEverything の更新チェック終了までお待ちください。"
+END
+
+//Splashscreen
+STRINGTABLE
+BEGIN
+    IDS_SS_CHECKINGMUTEX                "Checking instance"
+    IDS_SS_INTERFACE                    "Creating interface"
+    IDS_SS_OPTIONS                      "Restoring options"
+END
+
+//Toolbar
+STRINGTABLE
+BEGIN
+    IDS_TB_TRAY                         "トレイ"
+    IDS_TB_SETTINGS                     "オプション"
+    IDS_TB_MINIMIZE                     "ミニマイズ"
+    IDS_TB_UPDATE                       "アップデート"
+    IDS_TB_CHECKINGUPD                  "チェック中"
+    IDS_TB_TOPMOST                      "オントップ"
+    IDS_TB_ABOUT                        "インフォ"
+    IDS_TB_EXIT                         "クローズ"
+END
+
+//Windows listview
+STRINGTABLE
+BEGIN
+    IDS_WL_WINDOWNAME                   "ウィンドウ名"
+    IDS_WL_STATUS                       "ステータス"
+    IDS_WL_FILENAME                     "ファイル名"
+   
+    IDS_WL_VISIBLE                      "表示中"
+    IDS_WL_MINIMIZED                    "最小化"
+   
+    IDS_WL_MENU_MINIMIZE                "トレイへ最小化"
+    IDS_WL_MENU_RESTORE                 "復元"
+    IDS_WL_MENU_PROPS                   "プロパティ"
+END
+
+//Status bar
+STRINGTABLE
+BEGIN
+    IDS_SB_TRAY                         "ここで各ウィンドウのトレイヘの最小化を設定"
+    IDS_SB_SETTINGS                     "TrayEverything の設定"
+    IDS_SB_MINIMIZE                     "TrayEverythingをトレイに最小化"
+    IDS_SB_UPDATE                       "アップデートチェック"
+    IDS_SB_TOPMOST                      "TrayEverythingを常に最前面表示"
+    IDS_SB_ABOUT                        "TrayEverythingの情報"
+    IDS_SB_EXIT                         "TrayEverythingを終了"
+    IDS_SB_READY                        "待機"
+   
+    IDS_SB_WL_MINIMIZE                  "ダブルクリックで最小化 '%s'"
+    IDS_SB_WL_RESTORE                   "ダブルクリックで復元 '%s'"
+   
+    IDS_SB_WINDOWSCOUNT                 "ウィンドウ数 %d"
+END
+
+//Options dlg
+STRINGTABLE
+BEGIN
+    IDS_OPT_TAB_GEN                     "一般"
+    IDS_OPT_TAB_TRAY                    "トレイ"
+    IDS_OPT_TAB_TRAY2                   "トレイ２"
+    IDS_OPT_TAB_PROGRAMS                "Programs"
+    IDS_OPT_TAB_HK                      "ホットキー"
+    
+    IDS_OPTS_WINDOWSSTART               "スタートアップに登録"
+    IDS_OPTS_UPD_CHECK                  "アップデートチェック"
+    IDS_OPTS_UPD_CHECK_EVERYSTART       "毎起動時"
+    IDS_OPTS_UPD_CHECK_EVERYDAY         "毎日"
+    IDS_OPTS_UPD_CHECK_WEEKLY           "毎週"
+    IDS_OPTS_LANGUAGE                   "表示言語"
+    
+    IDS_OPTS_MINONCLOSE                 "TrayEverything 終了選択時にトレイへ最小化"
+    IDS_OPTS_HIDEONMIN                  "TrayEverything 最小化時にトレイアイコンを隠す"
+    IDS_OPTS_HIDEONMIN_HELP             "ウィンドウの復元は Win+T キー"
+    IDS_OPTS_OTHERPROGS                 "他のプログラムの設定"
+    IDS_OPTS_TRAY_NOICON                "ウィンドウ最小化時に「トレイに最小化」しない"
+    IDS_OPTS_TRAY_PWDPROTECT            "最小化ウィンドウをパスワードで保護"
+    IDS_OPTS_TRAY_GROUPICON             "同名プログラムのアイコンをグループ化"
+    
+    IDS_OPTS_AUTOMINIMIZE               "自動最小化"
+    IDS_OPTS_AUTOMIN                    "ウィンドウ非アクティブ化時の最小化遅延時間:"
+    IDS_OPTS_AUTOMIN_TYPE_SECS          "秒"
+    IDS_OPTS_AUTOMIN_TYPE_MINS          "分"
+    
+    IDS_OPTS_MINFROMPROGRS              "他のプログラムから最小化"
+    IDS_OPTS_MFP_NONE                   "オプションなし"
+    IDS_OPTS_MFP_TRAYBUTTON             "全ウィンドウに「トレイに最小化」ボタンを作成"
+    IDS_OPTS_MFP_MINBUTTON              "最小化ボタン使用時はトレイに表示"
+    IDS_OPTS_MFP_MIDDLECLICK            "Minimize on mouse middle click on titlebar"
+    
+    IDS_OPTS_MFP_TRAYBUTTON_TT          "タイトルバーのボタン横に「ワンクリックでトレイに最小化」ボタンを追加します"
+    IDS_OPTS_MFP_MINBUTTON_TT           "全ウィンドウを最小化ボタンクリック時にトレイに最小化するようにします"
+    
+    IDS_OPTS_PL_ALWAYSMINIMIZE          "Always minimize automatically as soon as it's opened"
+    IDS_OPTS_PL_NEVERMINIMIZE           "Never minimize"
+    IDS_OPTS_PL_NOAUTOMINIMIZE          "Don't auto-minimize automatically"
+    IDS_OPTS_PL_NOTRAYBUTTON            "No new button to minimize to tray"
+    IDS_OPTS_PL_NOHOOKMINBUTTON         "Clicking on the minimize button doesn't mininize to tray"
+    
+    IDS_OPTS_KBHOTKEY                   "ホットキーの指定"
+    
+    IDS_OPTS_CHANGED                    "オプションが変更されています。変更を適用しますか？"
+END
+
+//Set/Get password dialog
+STRINGTABLE
+BEGIN
+    IDS_SP_WINDOW                       "パスワード設定"
+    IDS_GP_WINDOW                       "パスワード入力"
+
+    IDS_SGP_PWD1                        "パスワード:"
+    IDS_SGP_PWD2                        "パスワード確認:"
+   
+    IDS_SGP_ST_ENTERPWD                 "パスワードの入力"
+    IDS_SGP_ST_WRONGPWD                 "パスワード不一致！"
+    IDS_SGP_ST_PWDLENGTH                "パスワード入力：4文字以上"
+    IDS_SGP_ST_REPEATPWD                "「パスワード確認」エリアへパスワードを再入力："
+    IDS_SGP_ST_DIFFER                   "パスワードが一致しません"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TMENU_RESTORE                   "復元 %s"
+   
+    IDS_MTMENU_RESTORE                  "TrayEverything を復元"
+    IDS_MTMENU_OPTIONS                  "設定"
+    IDS_MTMENU_UPDATE                   "アップデート"
+    IDS_MTMENU_ABOUT                    "情報"
+    IDS_MTMENU_EXIT                     "TrayEverything を終了"
+END
+
+//Update dlg
+STRINGTABLE
+BEGIN
+    IDS_UD_PERCENTILE                   "パーセント:"
+    IDS_UD_STATUS                       "ステータス:"
+    IDS_UD_COMPLETED                    "完了:"
+    IDS_UD_CHECK                        "更新チェック"
+    IDS_UD_DOWNLOAD                     "更新をダウンロード"
+   
+    IDS_UD_UL_COLUMN1                   "更新"
+    IDS_UD_UL_COLUMN2                   "新バージョン"
+    IDS_UD_UL_COLUMN3                   "所有バージョン"
+    IDS_UD_UL_COLUMN4                   "サイズ"
+   
+    IDS_UD_VERSION_NOTFOUND             "バージョン確認不能"
+    IDS_UD_VERSION_NOTINSTALLED         "未インストール"
+   
+    IDS_UD_CHK_ERR_FILECONN             "インターネット接続不能"
+    IDS_UD_CHK_ERR_FILESTATUS           "更新ファイルに接続不能 エラー: %d"
+   
+    IDS_UD_ST_READY                     "待機"
+    IDS_UD_ST_FILECONN                  "ファイルへ接続中"
+    IDS_UD_ST_FILESIZE                  "ファイルサイズ取得中"
+    IDS_UD_ST_LOCALFILE                 "ローカルファイル作成中"
+    IDS_UD_ST_DOWNLOAD                  "ダウンロード中"
+    IDS_UD_ST_DONE                      "完了"
+   
+    IDS_UD_ERR_FILECONN                 "ファイルに接続不能\nエラー: %s\n更新: %s"
+    IDS_UD_ERRST_FILECONN               "ファイルに接続不能"
+    IDS_UD_ERR_HTTPERR                  "ファイル接続中のエラー\nエラー: %d\n更新: %s"
+    IDS_UD_ERRST_HTTPERR                "ファイル接続中のエラー"
+    IDS_UD_ERR_LOCALFILE                "ローカルファイルの作成不能\nエラー: %s\n更新: %s"
+    IDS_UD_ERRST_LOCALFILE              "ローカルファイルの作成不能"
+    IDS_UD_ERR_DOWNLOAD                 "ダウンロードエラー\nエラー: %s\n更新: %s"
+    IDS_UD_ERRST_DOWNLOAD               "ダウンロードエラー"
+   
+    IDS_UD_PRG                          "ダウンロード数: %s 全: %s"
+    IDS_UD_PRG_NOSIZE                   "ダウンロード数: %s 全: ???"
+   
+    IDS_UD_MSG_RESETTING                "更新ファイルのダウンロード完了。更新を有効にするために TrayEverything を再起動します。"
+    IDS_UD_MSG_NOUPDATE                 "最新版を所持しています。アップデートの必要なし"
+END
+
+//About dialog
+STRINGTABLE
+BEGIN
+    IDS_AD_VERSION                      "バージョン:"
+    IDS_AD_CHECKUPDATES                 "アップデートチェック"
+    IDS_AD_CREDITS                      "クレジット"
+    IDS_AD_CREDITS_EXT                  " \x95 GANT iConPack のアイコン\r\n"
+                                        " \x95 shog9 氏による BalloonHelp Control\r\n"
+                                        " \x95 Neal Stublen 氏による Hyperlink control\r\n"
+                                        " \x95 Chinese translation by Yang\r\n"
+                                        " \x95 Japanese translation by Asabukuro\r\n"
+                                        " \x95 Portuguese translation by Cláudio Mantovani Vieira\r\n"
+                                        " \x95 Spanish translation by ikelocho\r\n"
+                                        " \x95 German translation by Puh Patrick Steinke\r\n"
+                                        " \x95 Czech translation by Petr Zikmund (zikmund.petr@gmail.com)"
+   
+    IDS_AD_WEBSITE                      "Winapizone.net の TrayEverything ページへ"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_UPDBALLOON_TITLE                "アップデート"
+    IDS_UPDBALLOON_TEXT                 "TrayEverything の最新版がダウンロードできます。\nこのバルーンをクリックして確認とダウンロードを行ってください。"
+END

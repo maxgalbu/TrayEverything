@@ -1,0 +1,231 @@
+#include "../lang.h"
+#include "version.rc"
+
+#pragma code_page(65001)
+
+STRINGTABLE
+BEGIN
+    IDS_SHORTNAME                       "cz"
+    IDS_NAME                            "Czech"
+END
+
+STRINGTABLE 
+BEGIN 
+    IDS_DLG_OK                      "Ok" 
+    IDS_DLG_CANCEL                  "Zrušit" 
+    IDS_DLG_APPLY                   "Použít" 
+    IDS_DLG_DEFAULT                 "Výchozí" 
+END 
+
+STRINGTABLE 
+BEGIN 
+    IDS_ERROR                       "Chyba" 
+    IDS_YESNO                       "Jste si jist?" 
+    IDS_INFO                        "Info" 
+END 
+
+STRINGTABLE 
+BEGIN 
+    IDS_ERR_CHECKINGFORUPDATES      "Prosím, vyčkejte, dokud TrayEverything nedokončí kontrolu aktualizací" 
+END 
+
+// Splashscreen 
+STRINGTABLE 
+BEGIN 
+    IDS_SS_CHECKINGMUTEX           "Kontrola instance" 
+    IDS_SS_INTERFACE               "Vytváření rozhraní" 
+    IDS_SS_OPTIONS                 "Obnova možností" 
+END 
+
+// Toolbar 
+STRINGTABLE 
+BEGIN 
+    IDS_TB_TRAY                    "Tray" 
+    IDS_TB_SETTINGS                "Možnosti" 
+    IDS_TB_MINIMIZE                "Minimalizovat" 
+    IDS_TB_UPDATE                  "Update" 
+    IDS_TB_CHECKINGUPD             "Probíhá kontrola..." 
+    IDS_TB_TOPMOST                 "Vždy na vrchu" 
+    IDS_TB_ABOUT                   "O programu" 
+    IDS_TB_EXIT                    "Konec" 
+END 
+
+// Windows listview 
+STRINGTABLE 
+BEGIN 
+    IDS_WL_WINDOWNAME  "Název okna" 
+    IDS_WL_STATUS "Status" 
+    IDS_WL_FILENAME "Název souboru" 
+
+    IDS_WL_VISIBLE "Viditelný" 
+    IDS_WL_MINIMIZED "Minimalizovaný" 
+
+    IDS_WL_MENU_MINIMIZE "Minimalizovat do traye" 
+    IDS_WL_MENU_RESTORE "Obnovit" 
+    IDS_WL_MENU_PROPS "Vlastnosti" 
+END 
+
+// Status bar 
+STRINGTABLE 
+BEGIN 
+    IDS_SB_TRAY "Odtud můžete minimalizovat do traye každé okno" 
+    IDS_SB_SETTINGS "Nastavení TrayEverything"
+    IDS_SB_MINIMIZE "Minimalizovat TrayEverything do traye" 
+    IDS_SB_UPDATE "Zkontrolovat aktualizace" 
+    IDS_SB_TOPMOST "Umístí TrayEverything nad ostatní okna" 
+    IDS_SB_ABOUT "Informace o TrayEverything" 
+    IDS_SB_EXIT "Ukončit TrayEverything" 
+    IDS_SB_READY "Připraven" 
+
+    IDS_SB_WL_MINIMIZE "Dvojitým kliknutím zminimalizujete '%s'" 
+    IDS_SB_WL_RESTORE "Dvojitým kliknutím obnovíte '%s'" 
+
+    IDS_SB_WINDOWSCOUNT "%d okno(a)" 
+END 
+
+// Options DLG 
+STRINGTABLE 
+BEGIN 
+    IDS_OPT_TAB_GEN                     "Obecné" 
+    IDS_OPT_TAB_TRAY                    "Tray" 
+    IDS_OPT_TAB_TRAY2                   "Tray 2" 
+    IDS_OPT_TAB_PROGRAMS                "Programs"
+    IDS_OPT_TAB_HK                      "Klávesové zkratky" 
+
+    IDS_OPTS_WINDOWSSTART               "Spustit při startu Windows" 
+    IDS_OPTS_UPD_CHECK                  "Zkontrolovat aktualizace" 
+    IDS_OPTS_UPD_CHECK_EVERYSTART       "Každé spuštění" 
+    IDS_OPTS_UPD_CHECK_EVERYDAY         "Každý den" 
+    IDS_OPTS_UPD_CHECK_WEEKLY           "Každý týden" 
+    IDS_OPTS_LANGUAGE                   "Language" 
+
+    IDS_OPTS_MINONCLOSE                 "Minimalizovat TrayEverything místo zavření" 
+    IDS_OPTS_HIDEONMIN                  "Skrýt TrayEverything v tray, když je minimalizovaný" 
+    IDS_OPTS_HIDEONMIN_HELP             "Chcete-li obnovit TrayEverything, stiskněte Win + T" 
+    IDS_OPTS_OTHERPROGS                 "Ostatní programy" 
+    IDS_OPTS_TRAY_NOICON                "Minimalizovaná okna bez ikon" 
+    IDS_OPTS_TRAY_PWDPROTECT            "Ochrana heslem pro minimalizovaná okna" 
+    IDS_OPTS_TRAY_GROUPICON             "Seskupovat ikony stejného programu" 
+
+    IDS_OPTS_AUTOMINIMIZE               "Automatická minimalizace" 
+    IDS_OPTS_AUTOMIN                    "Automatická minimalizace neaktivních oken po:" 
+    IDS_OPTS_AUTOMIN_TYPE_SECS          "sekund" 
+    IDS_OPTS_AUTOMIN_TYPE_MINS          "minut" 
+
+    IDS_OPTS_MINFROMPROGRS              "Minimalizace ostatních programů" 
+    IDS_OPTS_MFP_NONE                   "Bez volby" 
+    IDS_OPTS_MFP_TRAYBUTTON             "Přidat nové tlačítko ve všech oknech, pro přímou minimalizaci" 
+    IDS_OPTS_MFP_MINBUTTON              "Umísti programy tray pomocí tlačítka minimalizovat" 
+    IDS_OPTS_MFP_MIDDLECLICK            "Minimize on mouse middle click on titlebar"
+    
+    IDS_OPTS_MFP_TRAYBUTTON_TT          "Vloží nové tlačítko do záhlaví vedle tlačítka minimalizovat, " 
+        "okno se minimalizuje do tray jedním klepnutím na toto tlačítko" 
+    IDS_OPTS_MFP_MINBUTTON_TT           "Tato volba vám jednoduše umožňuje minimalizovat do tray všechny okna " 
+        "kliknutím na minimalizační tlačítko" 
+
+    IDS_OPTS_PL_ALWAYSMINIMIZE          "Always minimize automatically as soon as it's opened"
+    IDS_OPTS_PL_NEVERMINIMIZE           "Never minimize"
+    IDS_OPTS_PL_NOAUTOMINIMIZE          "Don't auto-minimize automatically"
+    IDS_OPTS_PL_NOTRAYBUTTON            "No new button to minimize to tray"
+    IDS_OPTS_PL_NOHOOKMINBUTTON         "Clicking on the minimize button doesn't mininize to tray"
+
+    IDS_OPTS_KBHOTKEY                   "Klávesové zkratky" 
+
+    IDS_OPTS_CHANGED                    "Jedna nebo více možností byly změněny. Přejete si, aby se změny uplatnily?" 
+END 
+
+//Set/Get password dialog
+STRINGTABLE 
+BEGIN 
+    IDS_SP_WINDOW "Nastavit heslo" 
+    IDS_GP_WINDOW "Zadejte heslo" 
+
+    IDS_SGP_PWD1 "Heslo:" 
+    IDS_SGP_PWD2 "Heslo znovu:" 
+
+    IDS_SGP_ST_ENTERPWD "Zadejte heslo"
+    IDS_SGP_ST_WRONGPWD "Špatné heslo!" 
+    IDS_SGP_ST_PWDLENGTH "Zadejte heslo s minimálně 4 znaky." 
+    IDS_SGP_ST_REPEATPWD "Zadané heslo v ' Heslo znovu ' je chybné." 
+    IDS_SGP_ST_DIFFER "Obě Vámi napsaná hesla nejsou stejná." 
+END 
+
+STRINGTABLE 
+BEGIN 
+    IDS_TMENU_RESTORE "Obnovit %s" 
+
+    IDS_MTMENU_RESTORE "Obnovit TrayEverything" 
+    IDS_MTMENU_OPTIONS "Nastavení..." 
+    IDS_MTMENU_UPDATE "Aktualizace..." 
+    IDS_MTMENU_ABOUT "O programu..." 
+    IDS_MTMENU_EXIT "Ukončit TrayEverything" 
+END 
+
+//Update dlg 
+STRINGTABLE 
+BEGIN 
+    IDS_UD_PERCENTILE "Procent:" 
+    IDS_UD_STATUS "Stav:" 
+    IDS_UD_COMPLETED "Dokončené:" 
+    IDS_UD_CHECK "Zkontrolovat aktualizace" 
+    IDS_UD_DOWNLOAD "Stáhnout aktualizace" 
+
+    IDS_UD_UL_COLUMN1 "Update" 
+    IDS_UD_UL_COLUMN2 "Dostupná verze" 
+    IDS_UD_UL_COLUMN3 "Instalovaná verze" 
+    IDS_UD_UL_COLUMN4 "Velikost" 
+
+    IDS_UD_VERSION_NOTFOUND "verze nalezena"
+    IDS_UD_VERSION_NOTINSTALLED "není nainstalován" 
+
+    IDS_UD_CHK_ERR_FILECONN "Nemohu se připojit k internetu." 
+    IDS_UD_CHK_ERR_FILESTATUS "Nelze se připojit k aktualizaci souboru. Error: %d" 
+
+    IDS_UD_ST_READY "Připraven" 
+    IDS_UD_ST_FILECONN "Připojení k souboru ..." 
+    IDS_UD_ST_FILESIZE "Získávám velikost souboru ..." 
+    IDS_UD_ST_LOCALFILE "Vytváření místního souboru ..." 
+    IDS_UD_ST_DOWNLOAD "Stahuji ..." 
+    IDS_UD_ST_DONE "Hotovo." 
+
+    IDS_UD_ERR_FILECONN "Nelze se připojit k souboru. \nError: %s \nUpdate: %s" 
+    IDS_UD_ERRST_FILECONN "Nelze se připojit k souboru." 
+    IDS_UD_ERR_HTTPERR "Chyba při připojování k souboru. \nError: %d \nUpdate: %s" 
+    IDS_UD_ERRST_HTTPERR "Chyba při připojování k souboru." 
+    IDS_UD_ERR_LOCALFILE "Nepodařilo se vytvořit lokální soubor. \nError: %s \nUpdate: %s" 
+    IDS_UD_ERRST_LOCALFILE "Nepodařilo se vytvořit lokální soubor." 
+    IDS_UD_ERR_DOWNLOAD "Chyba při stahování. \nError: %s \nUpdate: %s" 
+    IDS_UD_ERRST_DOWNLOAD "Chyba při stahování"
+
+    IDS_UD_PRG "Staženo %s z %s" 
+    IDS_UD_PRG_NOSIZE "Staženo %s z ???" 
+
+    IDS_UD_MSG_RESETTING "Aktualizace byly staženy. TrayEverything se nyní zavřene, aby se aktualizace nainstalovaly." 
+    IDS_UD_MSG_NOUPDATE "Aktualizace není k dispozici. Máte nejnovější verzi." 
+END 
+
+// About Dialog 
+STRINGTABLE 
+BEGIN 
+    IDS_AD_VERSION "Verze:" 
+    IDS_AD_CHECKUPDATES "Zkontrolovat aktualizace" 
+    IDS_AD_CREDITS "Zásluhy" 
+    IDS_AD_CREDITS_EXT          " \x95 Ikony z GANT iConPack\r\n"
+                                " \x95 BalloonHelp kontroloval shog9\r\n"
+                                " \x95 Hyperlink kontroloval Neal Stublen\r\n"
+                                " \x95 Chinese překlad Yang\r\n"
+                                " \x95 Japanese překlad Asabukuro\r\n"
+                                " \x95 Portuguese překlad Cláudio Mantovani Vieira\r\n"
+                                " \x95 Spanish překlad ikelocho\r\n"
+                                " \x95 German překlad Puh Patrick Steinke\r\n"
+                                " \x95 CZ překlad Petr Zikmund (zikmund.petr@gmail.com)"
+
+    IDS_AD_WEBSITE "Podívejte se na stránku TrayEverything na winapizone.net" 
+END 
+
+STRINGTABLE 
+BEGIN 
+    IDS_UPDBALLOON_TITLE "Aktualizace" 
+    IDS_UPDBALLOON_TEXT "Dostupné nové aktualizace TrayEverything. \n" 
+        "Kliknutím na tuto bublinu je stáhnete." 
+END

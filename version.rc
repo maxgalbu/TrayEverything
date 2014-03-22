@@ -1,0 +1,27 @@
+#include <windows.h>
+
+1 VERSIONINFO
+FILEVERSION 1,3,0,0
+PRODUCTVERSION 1,3,0,0
+FILETYPE VFT_APP
+BEGIN
+    BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904E4"
+		BEGIN
+            VALUE "CompanyName", "winapizone.net"
+            VALUE "FileVersion", "1.3"
+            VALUE "FileDescription", ""
+            VALUE "InternalName", "TrayEverything"
+            VALUE "LegalCopyright", ""
+            VALUE "LegalTrademarks", ""
+            VALUE "OriginalFilename", "TrayEverything.exe"
+            VALUE "ProductName", "TrayEverything"
+            VALUE "ProductVersion", "1.3"
+		END
+	END
+    BLOCK "VarFileInfo"
+	BEGIN
+        VALUE "Translation", 0x0409, 1252
+	END
+END

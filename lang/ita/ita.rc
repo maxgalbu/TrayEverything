@@ -1,0 +1,230 @@
+#include "../lang.h"
+#include "version.rc"
+
+LANGUAGE LANG_ITALIAN, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+    IDS_SHORTNAME                       "it"
+    IDS_NAME                            "Italiano"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DLG_OK                          "Ok"
+    IDS_DLG_CANCEL                      "Annulla"
+    IDS_DLG_APPLY                       "Applica"
+    IDS_DLG_DEFAULT                     "Default"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR                           "Errore"
+    IDS_YESNO                           "Sei sicuro?"
+    IDS_INFO                            "Informazione"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERR_CHECKINGFORUPDATES          "Attendere che TrayEverything finisca di controllare gli aggiornamenti."
+END
+
+//Splashscreen
+STRINGTABLE
+BEGIN
+    IDS_SS_CHECKINGMUTEX                "Controllo instanza"
+    IDS_SS_INTERFACE                    "Creazione grafica"
+    IDS_SS_OPTIONS                      "Ripristino opzioni"
+END
+
+//Toolbar
+STRINGTABLE
+BEGIN
+    IDS_TB_TRAY                         "&Tray"
+    IDS_TB_SETTINGS                     "&Opzioni"
+    IDS_TB_MINIMIZE                     "&Minimizza"
+    IDS_TB_UPDATE                       "&Aggiorn."
+    IDS_TB_CHECKINGUPD                  "&Controllo..."
+    IDS_TB_TOPMOST                      "&Primo piano"
+    IDS_TB_ABOUT                        "A&bout"
+    IDS_TB_EXIT                         "&Esci"
+END
+
+//Windows listview
+STRINGTABLE
+BEGIN
+    IDS_WL_WINDOWNAME                   "Nome finestra"
+    IDS_WL_STATUS                       "Stato"
+    IDS_WL_FILENAME                     "Nome file"
+    
+    IDS_WL_VISIBLE                      "Visibile"
+    IDS_WL_MINIMIZED                    "Minimizzato"
+    
+    IDS_WL_MENU_MINIMIZE                "Minimizza"
+    IDS_WL_MENU_RESTORE                 "Ripristina"
+    IDS_WL_MENU_PROPS                   "Proprietà"
+END
+
+//Status bar
+STRINGTABLE
+BEGIN
+    IDS_SB_TRAY                         "Da qui puoi minimizzare qualsiasi finetra"
+    IDS_SB_SETTINGS                     "Impostazioni del programma"
+    IDS_SB_MINIMIZE                     "Minimizza TrayEverything nel tray"
+    IDS_SB_UPDATE                       "Controlla aggiornamenti"
+    IDS_SB_TOPMOST                      "TrayEverything sempre in primo piano"
+    IDS_SB_ABOUT                        "Informazioni sul programma"
+    IDS_SB_EXIT                         "Esci da TrayEverything"
+    IDS_SB_READY                        "Pronto"
+    
+    IDS_SB_WL_MINIMIZE                  "Doppio click per minimizzare '%s'"
+    IDS_SB_WL_RESTORE                   "Doppio click per ripristinare '%s'"
+    
+    IDS_SB_WINDOWSCOUNT                 "%d finestra/e"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OPT_TAB_GEN                     "Generale"
+    IDS_OPT_TAB_TRAY                    "Tray"
+    IDS_OPT_TAB_TRAY2                   "Tray 2"
+    IDS_OPT_TAB_PROGRAMS                "Programs"
+    IDS_OPT_TAB_HK                      "Hotkey"
+    
+    IDS_OPTS_WINDOWSSTART               "Esegui all'avvio di windows"
+    IDS_OPTS_UPD_CHECK                  "Controlla aggiornamenti"
+    IDS_OPTS_UPD_CHECK_EVERYSTART       "A ogni avvio"
+    IDS_OPTS_UPD_CHECK_EVERYDAY         "Ogni giorno"
+    IDS_OPTS_UPD_CHECK_WEEKLY           "Ogni settimana"
+    IDS_OPTS_LANGUAGE                   "Lingua"
+    
+    IDS_OPTS_MINONCLOSE                 "Minimizza TrayEverything invece di chiuderlo"
+    IDS_OPTS_HIDEONMIN                  "Nascondi TrayEverything dal tray quando viene minimizzato"
+    IDS_OPTS_HIDEONMIN_HELP             "Per ripristinare TrayEverything, permi Win+T"
+    IDS_OPTS_OTHERPROGS                 "Altri programmi"
+    IDS_OPTS_TRAY_NOICON                "Nessuna icona nel tray per le finestra minimizzate"
+    IDS_OPTS_TRAY_PWDPROTECT            "Proteggi la finestra minimizzata con una password"
+    IDS_OPTS_TRAY_GROUPICON             "Raggruppa icone dello stesso programma"
+    
+    IDS_OPTS_AUTOMINIMIZE               "Autominimizza"
+    IDS_OPTS_AUTOMIN                    "Minimizza automaticamente le finestre inattive dopo:"
+    IDS_OPTS_AUTOMIN_TYPE_SECS          "secondi"
+    IDS_OPTS_AUTOMIN_TYPE_MINS          "minuto/i"
+    
+    IDS_OPTS_MINFROMPROGRS              "Minimizza da altri programmi"
+    IDS_OPTS_MFP_NONE                   "Nessuna opzione"
+    IDS_OPTS_MFP_TRAYBUTTON             "Inserisci un pulsante in ogni finestra per minimizzarla direttamente"
+    IDS_OPTS_MFP_MINBUTTON              "Minimizza programmi nel tray usando il pulsante per ridurre ad icona"
+    IDS_OPTS_MFP_MIDDLECLICK            "Minimize on mouse middle click on titlebar"
+    
+    IDS_OPTS_MFP_MINBUTTON_TT           "Permette di minimizzare tutte le finestre semplicemente cliccando "
+        "sul pulsante per ridurre ad icona la finestra"
+    IDS_OPTS_MFP_TRAYBUTTON_TT          "Inserisce un pulsante vicino ai pulsanti nella barra del titolo "
+        "di ogni finestra"
+    
+    IDS_OPTS_PL_ALWAYSMINIMIZE          "Auto-minimizza sempre non appena viene eseguito"
+    IDS_OPTS_PL_NEVERMINIMIZE           "Non miminizzare mai"
+    IDS_OPTS_PL_NOAUTOMINIMIZE          "Non miminizzare automaticamente"
+    IDS_OPTS_PL_NOTRAYBUTTON            "Non inserire un nuovo pulsante per minimizzare nel tray"
+    IDS_OPTS_PL_NOHOOKMINBUTTON         "Cliccando sul pulsante per minimizzare, il programma non viene minimizzato nel tray"
+    
+    IDS_OPTS_KBHOTKEY                   "Hotkey da tastiera"
+    
+    IDS_OPTS_CHANGED                    "Le opzioni sono state modificate. Vuoi applicare le modifiche?"
+END
+
+//Set/get password dialog
+STRINGTABLE
+BEGIN
+    IDS_SP_WINDOW                       "Imposta una password"
+    IDS_GP_WINDOW                       "Inserisci la password"
+
+    IDS_SGP_PWD1                        "Password:"
+    IDS_SGP_PWD2                        "Ripeti password:"
+    
+    IDS_SGP_ST_ENTERPWD                 "Inserisci una password."
+    IDS_SGP_ST_WRONGPWD                 "Password errata!"
+    IDS_SGP_ST_PWDLENGTH                "Immetti una password di almeno 4 lettere."
+    IDS_SGP_ST_REPEATPWD                "Riscrivi la tua password nel campo 'Ripeti password'."
+    IDS_SGP_ST_DIFFER                   "Le due password inserite non coincidono."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TMENU_RESTORE                   "Ripristina %s"
+    
+    IDS_MTMENU_RESTORE                  "Ripristina TrayEverything"
+    IDS_MTMENU_OPTIONS                  "Opzioni..."
+    IDS_MTMENU_UPDATE                   "Aggiornamenti..."
+    IDS_MTMENU_ABOUT                    "About..."
+    IDS_MTMENU_EXIT                     "Esci da TrayEverything"
+END
+
+//Update dlg
+STRINGTABLE
+BEGIN
+    IDS_UD_PERCENTILE                   "Percentuale:"
+    IDS_UD_STATUS                       "Stato:"
+    IDS_UD_COMPLETED                    "Progresso:"
+    IDS_UD_CHECK                        "Cerca aggiornamenti"
+    IDS_UD_DOWNLOAD                     "Scarica aggiornamenti"
+    
+    IDS_UD_UL_COLUMN1                   "Aggiornamento"
+    IDS_UD_UL_COLUMN2                   "Vers. disponibile"
+    IDS_UD_UL_COLUMN3                   "Vers. installata"
+    IDS_UD_UL_COLUMN4                   "Dimensioni"
+    
+    IDS_UD_VERSION_NOTFOUND             "Impossibile trovare versione"
+    IDS_UD_VERSION_NOTINSTALLED         "Non installato"
+    
+    IDS_UD_CHK_ERR_FILECONN             "Impossibile connettersi a internet."
+    IDS_UD_CHK_ERR_FILESTATUS           "Impossibile connettersi al file degli aggiornamenti. Error: %d"
+    
+    IDS_UD_ST_READY                     "Pronto"
+    IDS_UD_ST_FILECONN                  "Connessione al file in corso.."
+    IDS_UD_ST_FILESIZE                  "Ricavo la dimensione del file..."
+    IDS_UD_ST_LOCALFILE                 "Creazione di un file locale..."
+    IDS_UD_ST_DOWNLOAD                  "Download in corso..."
+    IDS_UD_ST_DONE                      "Completato."
+    
+    IDS_UD_ERR_FILECONN                 "Impossibile connettersi al file.\nErrore: %s\nAggiornamento: %s"
+    IDS_UD_ERRST_FILECONN               "Impossibile connettersi al file."
+    IDS_UD_ERR_HTTPERR                  "Errore nella connessione al file.\nErrore: %d\nAggiornamento: %s"
+    IDS_UD_ERRST_HTTPERR                "Errore nella connessione al file."
+    IDS_UD_ERR_LOCALFILE                "Unable to create a local file.\nErrore: %s\nAggiornamento: %s"
+    IDS_UD_ERRST_LOCALFILE              "Unable to create a local file."
+    IDS_UD_ERR_DOWNLOAD                 "Errore durante il download.\nErrore: %s\nAggiornamento: %s"
+    IDS_UD_ERRST_DOWNLOAD               "Errore durante il download."
+    
+    IDS_UD_PRG                          "%s di %s"
+    IDS_UD_PRG_NOSIZE                   "%s di ???"
+    
+    IDS_UD_MSG_RESETTING                "Aggiornamenti scaricati. Il programma verrà ora riavviato per applicarli."
+    IDS_UD_MSG_NOUPDATE                 "Nessun aggiornamento disponibile, possiedi già la versione più aggiornata."
+END
+
+//About dialog
+STRINGTABLE
+BEGIN
+    IDS_AD_VERSION                      "Versione:"
+    IDS_AD_CHECKUPDATES                 "Controlla aggiornamenti"
+    IDS_AD_CREDITS                      "Crediti"
+    IDS_AD_CREDITS_EXT                  " \x95 Icone dal GANT iConPack\r\n"
+                                        " \x95 BalloonHelp Control di shog9\r\n"
+                                        " \x95 Hyperlink control di Neal Stublen\r\n"
+                                        " \x95 Traduzione in cinese di Yang\r\n"
+                                        " \x95 Traduzione in giapponese di Asabukuro\n"
+                                        " \x95 Traduzione in portoghese di Cláudio Mantovani Vieira\r\n"
+                                        " \x95 Traduzione in spagnolo di ikelocho\r\n"
+                                        " \x95 Traduzione in tedesco di Puh Patrick Steinke\r\n"
+                                        " \x95 Traduzione in ceco di Petr Zikmund (zikmund.petr@gmail.com)"
+    
+    IDS_AD_WEBSITE                      "Vai alla pagina di TrayEverything su winapizone.net"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_UPDBALLOON_TITLE                "Aggiornamenti"
+    IDS_UPDBALLOON_TEXT                 "Sono disponibili nuovi aggiornamenti per TrayEverything.\n"
+        "Clicca su questo balloon per controllarli e scaricarli."
+END

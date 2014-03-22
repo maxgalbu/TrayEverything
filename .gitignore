@@ -6,8 +6,26 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
+*.dll
 
 # Compiled Static libraries
 *.lai
 *.la
 *.a
+
+# Compiled Resource files
+*.res
+
+# Compiled executables
+*.exe
+
+# Project files
+*.layout
+*.depend
+*.cbp
+
+# Compiled headers files
+*.gch
+
+# Ignored folders
+versions

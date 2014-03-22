@@ -1,0 +1,14 @@
+#include "resource.h"
+#include <windows.h>
+#include "version.rc"
+
+1 24 "updater\\updater.exe.Manifest"
+IDI_UPDATER ICON "updater\\updater.ico"
+
+IDD_UPDATERDLG DIALOG 0,0,150,30
+STYLE DS_CENTER|WS_POPUP|WS_BORDER
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "", IDC_UPDATERICON, 5,5,32,32, SS_ICON
+    LTEXT           "Please wait while TrayEverything update its components.", -1, 36,6,110,16
+END
