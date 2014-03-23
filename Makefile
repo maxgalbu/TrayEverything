@@ -180,7 +180,7 @@ $(OBJDIR_TRAYEVERYTHING)\\main.o: main.cpp
 	$(CXX) $(CFLAGS_TRAYEVERYTHING) $(INC_TRAYEVERYTHING) -c main.cpp -o $(OBJDIR_TRAYEVERYTHING)\\main.o
 
 $(OBJDIR_TRAYEVERYTHING)\\res.o: res.rc
-	$(CPP) -i res.rc -J rc -o $(OBJDIR_TRAYEVERYTHING)\\res.o -O coff $(INC_TRAYEVERYTHING)
+	$(WINDRES) -i res.rc -J rc -o $(OBJDIR_TRAYEVERYTHING)\\res.o -O coff $(INC_TRAYEVERYTHING)
 
 $(OBJDIR_TRAYEVERYTHING)\\version.o: version.rc
 	$(WINDRES) -i version.rc -J rc -o $(OBJDIR_TRAYEVERYTHING)\\version.o -O coff $(INC_TRAYEVERYTHING)
