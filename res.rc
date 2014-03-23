@@ -7,23 +7,23 @@
 #include "version.rc"
 
 1 24 "TrayEverything.exe.Manifest"
-IDI_MAINICON ICON "res\\trayeverything.ico"
+IDI_MAINICON ICON "res/trayeverything.ico"
 
-IDB_TRAY BITMAP "res\\tray.bmp"
-IDB_SETTINGS BITMAP "res\\settings.bmp"
-IDB_MINIMIZE BITMAP "res\\minimize.bmp"
-IDB_UPDATE BITMAP "res\\update.bmp"
-IDB_TOPMOST BITMAP "res\\topmost.bmp"
-IDB_ABOUT BITMAP "res\\about.bmp"
-IDB_EXIT BITMAP "res\\exit.bmp"
+IDB_TRAY BITMAP "res/tray.bmp"
+IDB_SETTINGS BITMAP "res/settings.bmp"
+IDB_MINIMIZE BITMAP "res/minimize.bmp"
+IDB_UPDATE BITMAP "res/update.bmp"
+IDB_TOPMOST BITMAP "res/topmost.bmp"
+IDB_ABOUT BITMAP "res/about.bmp"
+IDB_EXIT BITMAP "res/exit.bmp"
 
-IDB_ARROWUP BITMAP "res\\arrowup.bmp"
-IDB_ARROWDOWN BITMAP "res\\arrowdown.bmp"
+IDB_ARROWUP BITMAP "res/arrowup.bmp"
+IDB_ARROWDOWN BITMAP "res/arrowdown.bmp"
 
-IDI_EXPAND ICON "res\\expand.ico"
-IDI_COLLAPSE ICON "res\\collapse.ico"
+IDI_EXPAND ICON "res/expand.ico"
+IDI_COLLAPSE ICON "res/collapse.ico"
 
-IDB_SPLASHSCREEN GIF "res\\splashscreen.gif"
+IDB_SPLASHSCREEN GIF "res/splashscreen.gif"
 
 IDD_MAINDLG DIALOG 0,0,300,200
 STYLE DS_CENTER|WS_SYSMENU|WS_CAPTION|WS_MINIMIZEBOX|NOT WS_MAXIMIZEBOX
