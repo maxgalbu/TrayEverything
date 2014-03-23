@@ -3,7 +3,4 @@ language: cpp
 install: 
     sudo apt-get install mingw32
 
-before_script:
-    export PATH=$(pwd):$PATH
-
 script: make

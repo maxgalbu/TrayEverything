@@ -1,5 +1,5 @@
 #include "resource.h"
-#include "HyperLinks.h"
+#include "Hyperlinks.h"
 #include "LangFuncs.h"
 #include "MainFuncs.h"
 
