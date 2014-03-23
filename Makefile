@@ -166,7 +166,6 @@ all: trayeverything ita eng por deu esp jpn chi cze updater hook
 clean: clean_trayeverything clean_ita clean_eng clean_por clean_deu clean_esp clean_jpn clean_chi clean_cze clean_updater clean_hook
 
 before_trayeverything: 
-	mkdir -p output/unicode
 	mkdir -p $(OBJDIR_TRAYEVERYTHING)
 
 after_trayeverything: 
@@ -229,8 +228,7 @@ $(OBJDIR_TRAYEVERYTHING)/WindowsList.o: WindowsList.cpp
 
 clean_trayeverything: 
 	rm -rf $(OBJ_TRAYEVERYTHING) $(OUT_TRAYEVERYTHING)
-	rmdir -p output/unicode
-	rmdir -p $(OBJDIR_TRAYEVERYTHING)
+	rm -rf $(OBJDIR_TRAYEVERYTHING)
 
 before_ita: 
 	mkdir -p output/unicode/lang
@@ -251,8 +249,7 @@ $(OBJDIR_ITA)/lang/ita/version.o: lang/ita/version.rc
 
 clean_ita: 
 	rm -rf $(OBJ_ITA) $(OUT_ITA)
-	rmdir -p output/unicode/lang
-	rmdir -p $(OBJDIR_ITA)/lang/ita
+	rm -rf $(OBJDIR_ITA)/lang/ita
 
 before_eng: 
 	mkdir -p output/unicode/lang
@@ -273,8 +270,7 @@ $(OBJDIR_ENG)/lang/eng/version.o: lang/eng/version.rc
 
 clean_eng: 
 	rm -rf $(OBJ_ENG) $(OUT_ENG)
-	rmdir -p output/unicode/lang
-	rmdir -p $(OBJDIR_ENG)/lang/eng
+	rm -rf $(OBJDIR_ENG)/lang/eng
 
 before_por: 
 	mkdir -p output/unicode/lang
@@ -295,8 +291,7 @@ $(OBJDIR_POR)/lang/por/version.o: lang/por/version.rc
 
 clean_por: 
 	rm -rf $(OBJ_POR) $(OUT_POR)
-	rmdir -p output/unicode/lang
-	rmdir -p $(OBJDIR_POR)/lang/por
+	rm -rf $(OBJDIR_POR)/lang/por
 
 before_deu: 
 	mkdir -p output/unicode/lang
@@ -317,8 +312,7 @@ $(OBJDIR_DEU)/lang/deu/version.o: lang/deu/version.rc
 
 clean_deu: 
 	rm -rf $(OBJ_DEU) $(OUT_DEU)
-	rmdir -p output/unicode/lang
-	rmdir -p $(OBJDIR_DEU)/lang/deu
+	rm -rf $(OBJDIR_DEU)/lang/deu
 
 before_esp: 
 	mkdir -p output/unicode/lang
@@ -339,8 +333,7 @@ $(OBJDIR_ESP)/lang/esp/version.o: lang/esp/version.rc
 
 clean_esp: 
 	rm -rf $(OBJ_ESP) $(OUT_ESP)
-	rmdir -p output/unicode/lang
-	rmdir -p $(OBJDIR_ESP)/lang/esp
+	rm -rf $(OBJDIR_ESP)/lang/esp
 
 before_jpn: 
 	mkdir -p output/unicode/lang
@@ -361,8 +354,7 @@ $(OBJDIR_JPN)/lang/jpn/version.o: lang/jpn/version.rc
 
 clean_jpn: 
 	rm -rf $(OBJ_JPN) $(OUT_JPN)
-	rmdir -p output/unicode/lang
-	rmdir -p $(OBJDIR_JPN)/lang/jpn
+	rm -rf $(OBJDIR_JPN)/lang/jpn
 
 before_chi: 
 	mkdir -p output/unicode/lang
@@ -383,8 +375,7 @@ $(OBJDIR_CHI)/lang/chi/version.o: lang/chi/version.rc
 
 clean_chi: 
 	rm -rf $(OBJ_CHI) $(OUT_CHI)
-	rmdir -p output/unicode/lang
-	rmdir -p $(OBJDIR_CHI)/lang/chi
+	rm -rf $(OBJDIR_CHI)/lang/chi
 
 before_cze: 
 	mkdir -p output/unicode/lang
@@ -405,8 +396,7 @@ $(OBJDIR_CZE)/lang/cze/version.o: lang/cze/version.rc
 
 clean_cze: 
 	rm -rf $(OBJ_CZE) $(OUT_CZE)
-	rmdir -p output/unicode/lang
-	rmdir -p $(OBJDIR_CZE)/lang/cze
+	rm -rf $(OBJDIR_CZE)/lang/cze
 
 before_updater: 
 	mkdir -p output/unicode
@@ -430,8 +420,7 @@ $(OBJDIR_UPDATER)/updater/version.o: updater/version.rc
 
 clean_updater: 
 	rm -rf $(OBJ_UPDATER) $(OUT_UPDATER)
-	rmdir -p output/unicode
-	rmdir -p $(OBJDIR_UPDATER)/updater
+	rm -rf $(OBJDIR_UPDATER)/updater
 
 before_hook: 
 	rm -f output\hook.dll
@@ -453,8 +442,7 @@ $(OBJDIR_HOOK)/hook/version.o: hook/version.rc
 
 clean_hook: 
 	rm -rf $(OBJ_HOOK) $(OUT_HOOK)
-	rmdir -p output/unicode
-	rmdir -p $(OBJDIR_HOOK)/hook
+	rm -rf $(OBJDIR_HOOK)/hook
 
 virtual_all: trayeverything ita eng por deu esp jpn chi cze updater hook
 
