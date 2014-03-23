@@ -166,8 +166,8 @@ all: trayeverything ita eng por deu esp jpn chi cze updater hook
 clean: clean_trayeverything clean_ita clean_eng clean_por clean_deu clean_esp clean_jpn clean_chi clean_cze clean_updater clean_hook
 
 before_trayeverything: 
-	cmd /c if not exist output\\unicode md output\\unicode
-	cmd /c if not exist $(OBJDIR_TRAYEVERYTHING) md $(OBJDIR_TRAYEVERYTHING)
+	mkdir -p output\\unicode
+	mkdir -p $(OBJDIR_TRAYEVERYTHING)
 
 after_trayeverything: 
 
@@ -228,13 +228,13 @@ $(OBJDIR_TRAYEVERYTHING)\\WindowsList.o: WindowsList.cpp
 	$(CXX) $(CFLAGS_TRAYEVERYTHING) $(INC_TRAYEVERYTHING) -c WindowsList.cpp -o $(OBJDIR_TRAYEVERYTHING)\\WindowsList.o
 
 clean_trayeverything: 
-	cmd /c del /f $(OBJ_TRAYEVERYTHING) $(OUT_TRAYEVERYTHING)
-	cmd /c rd output\\unicode
-	cmd /c rd $(OBJDIR_TRAYEVERYTHING)
+	rm -rf $(OBJ_TRAYEVERYTHING) $(OUT_TRAYEVERYTHING)
+	rmdir -p output\\unicode
+	rmdir -p $(OBJDIR_TRAYEVERYTHING)
 
 before_ita: 
-	cmd /c if not exist output\\unicode\\lang md output\\unicode\\lang
-	cmd /c if not exist $(OBJDIR_ITA)\\lang\\ita md $(OBJDIR_ITA)\\lang\\ita
+	mkdir -p output\\unicode\\lang
+	mkdir -p $(OBJDIR_ITA)\\lang\\ita
 
 after_ita: 
 
@@ -250,13 +250,13 @@ $(OBJDIR_ITA)\\lang\\ita\\version.o: lang\\ita\\version.rc
 	$(WINDRES) -i lang\\ita\\version.rc -J rc -o $(OBJDIR_ITA)\\lang\\ita\\version.o -O coff $(INC_ITA)
 
 clean_ita: 
-	cmd /c del /f $(OBJ_ITA) $(OUT_ITA)
-	cmd /c rd output\\unicode\\lang
-	cmd /c rd $(OBJDIR_ITA)\\lang\\ita
+	rm -rf $(OBJ_ITA) $(OUT_ITA)
+	rmdir -p output\\unicode\\lang
+	rmdir -p $(OBJDIR_ITA)\\lang\\ita
 
 before_eng: 
-	cmd /c if not exist output\\unicode\\lang md output\\unicode\\lang
-	cmd /c if not exist $(OBJDIR_ENG)\\lang\\eng md $(OBJDIR_ENG)\\lang\\eng
+	mkdir -p output\\unicode\\lang
+	mkdir -p $(OBJDIR_ENG)\\lang\\eng
 
 after_eng: 
 
@@ -272,13 +272,13 @@ $(OBJDIR_ENG)\\lang\\eng\\version.o: lang\\eng\\version.rc
 	$(WINDRES) -i lang\\eng\\version.rc -J rc -o $(OBJDIR_ENG)\\lang\\eng\\version.o -O coff $(INC_ENG)
 
 clean_eng: 
-	cmd /c del /f $(OBJ_ENG) $(OUT_ENG)
-	cmd /c rd output\\unicode\\lang
-	cmd /c rd $(OBJDIR_ENG)\\lang\\eng
+	rm -rf $(OBJ_ENG) $(OUT_ENG)
+	rmdir -p output\\unicode\\lang
+	rmdir -p $(OBJDIR_ENG)\\lang\\eng
 
 before_por: 
-	cmd /c if not exist output\\unicode\\lang md output\\unicode\\lang
-	cmd /c if not exist $(OBJDIR_POR)\\lang\\por md $(OBJDIR_POR)\\lang\\por
+	mkdir -p output\\unicode\\lang
+	mkdir -p $(OBJDIR_POR)\\lang\\por
 
 after_por: 
 
@@ -294,13 +294,13 @@ $(OBJDIR_POR)\\lang\\por\\version.o: lang\\por\\version.rc
 	$(WINDRES) -i lang\\por\\version.rc -J rc -o $(OBJDIR_POR)\\lang\\por\\version.o -O coff $(INC_POR)
 
 clean_por: 
-	cmd /c del /f $(OBJ_POR) $(OUT_POR)
-	cmd /c rd output\\unicode\\lang
-	cmd /c rd $(OBJDIR_POR)\\lang\\por
+	rm -rf $(OBJ_POR) $(OUT_POR)
+	rmdir -p output\\unicode\\lang
+	rmdir -p $(OBJDIR_POR)\\lang\\por
 
 before_deu: 
-	cmd /c if not exist output\\unicode\\lang md output\\unicode\\lang
-	cmd /c if not exist $(OBJDIR_DEU)\\lang\\deu md $(OBJDIR_DEU)\\lang\\deu
+	mkdir -p output\\unicode\\lang
+	mkdir -p $(OBJDIR_DEU)\\lang\\deu
 
 after_deu: 
 
@@ -316,13 +316,13 @@ $(OBJDIR_DEU)\\lang\\deu\\version.o: lang\\deu\\version.rc
 	$(WINDRES) -i lang\\deu\\version.rc -J rc -o $(OBJDIR_DEU)\\lang\\deu\\version.o -O coff $(INC_DEU)
 
 clean_deu: 
-	cmd /c del /f $(OBJ_DEU) $(OUT_DEU)
-	cmd /c rd output\\unicode\\lang
-	cmd /c rd $(OBJDIR_DEU)\\lang\\deu
+	rm -rf $(OBJ_DEU) $(OUT_DEU)
+	rmdir -p output\\unicode\\lang
+	rmdir -p $(OBJDIR_DEU)\\lang\\deu
 
 before_esp: 
-	cmd /c if not exist output\\unicode\\lang md output\\unicode\\lang
-	cmd /c if not exist $(OBJDIR_ESP)\\lang\\esp md $(OBJDIR_ESP)\\lang\\esp
+	mkdir -p output\\unicode\\lang
+	mkdir -p $(OBJDIR_ESP)\\lang\\esp
 
 after_esp: 
 
@@ -338,13 +338,13 @@ $(OBJDIR_ESP)\\lang\\esp\\version.o: lang\\esp\\version.rc
 	$(WINDRES) -i lang\\esp\\version.rc -J rc -o $(OBJDIR_ESP)\\lang\\esp\\version.o -O coff $(INC_ESP)
 
 clean_esp: 
-	cmd /c del /f $(OBJ_ESP) $(OUT_ESP)
-	cmd /c rd output\\unicode\\lang
-	cmd /c rd $(OBJDIR_ESP)\\lang\\esp
+	rm -rf $(OBJ_ESP) $(OUT_ESP)
+	rmdir -p output\\unicode\\lang
+	rmdir -p $(OBJDIR_ESP)\\lang\\esp
 
 before_jpn: 
-	cmd /c if not exist output\\unicode\\lang md output\\unicode\\lang
-	cmd /c if not exist $(OBJDIR_JPN)\\lang\\jpn md $(OBJDIR_JPN)\\lang\\jpn
+	mkdir -p output\\unicode\\lang
+	mkdir -p $(OBJDIR_JPN)\\lang\\jpn
 
 after_jpn: 
 
@@ -360,13 +360,13 @@ $(OBJDIR_JPN)\\lang\\jpn\\version.o: lang\\jpn\\version.rc
 	$(WINDRES) -i lang\\jpn\\version.rc -J rc -o $(OBJDIR_JPN)\\lang\\jpn\\version.o -O coff $(INC_JPN)
 
 clean_jpn: 
-	cmd /c del /f $(OBJ_JPN) $(OUT_JPN)
-	cmd /c rd output\\unicode\\lang
-	cmd /c rd $(OBJDIR_JPN)\\lang\\jpn
+	rm -rf $(OBJ_JPN) $(OUT_JPN)
+	rmdir -p output\\unicode\\lang
+	rmdir -p $(OBJDIR_JPN)\\lang\\jpn
 
 before_chi: 
-	cmd /c if not exist output\\unicode\\lang md output\\unicode\\lang
-	cmd /c if not exist $(OBJDIR_CHI)\\lang\\chi md $(OBJDIR_CHI)\\lang\\chi
+	mkdir -p output\\unicode\\lang
+	mkdir -p $(OBJDIR_CHI)\\lang\\chi
 
 after_chi: 
 
@@ -382,13 +382,13 @@ $(OBJDIR_CHI)\\lang\\chi\\version.o: lang\\chi\\version.rc
 	$(WINDRES) -i lang\\chi\\version.rc -J rc -o $(OBJDIR_CHI)\\lang\\chi\\version.o -O coff $(INC_CHI)
 
 clean_chi: 
-	cmd /c del /f $(OBJ_CHI) $(OUT_CHI)
-	cmd /c rd output\\unicode\\lang
-	cmd /c rd $(OBJDIR_CHI)\\lang\\chi
+	rm -rf $(OBJ_CHI) $(OUT_CHI)
+	rmdir -p output\\unicode\\lang
+	rmdir -p $(OBJDIR_CHI)\\lang\\chi
 
 before_cze: 
-	cmd /c if not exist output\\unicode\\lang md output\\unicode\\lang
-	cmd /c if not exist $(OBJDIR_CZE)\\lang\\cze md $(OBJDIR_CZE)\\lang\\cze
+	mkdir -p output\\unicode\\lang
+	mkdir -p $(OBJDIR_CZE)\\lang\\cze
 
 after_cze: 
 
@@ -404,13 +404,13 @@ $(OBJDIR_CZE)\\lang\\cze\\version.o: lang\\cze\\version.rc
 	$(WINDRES) -i lang\\cze\\version.rc -J rc -o $(OBJDIR_CZE)\\lang\\cze\\version.o -O coff $(INC_CZE)
 
 clean_cze: 
-	cmd /c del /f $(OBJ_CZE) $(OUT_CZE)
-	cmd /c rd output\\unicode\\lang
-	cmd /c rd $(OBJDIR_CZE)\\lang\\cze
+	rm -rf $(OBJ_CZE) $(OUT_CZE)
+	rmdir -p output\\unicode\\lang
+	rmdir -p $(OBJDIR_CZE)\\lang\\cze
 
 before_updater: 
-	cmd /c if not exist output\\unicode md output\\unicode
-	cmd /c if not exist $(OBJDIR_UPDATER)\\updater md $(OBJDIR_UPDATER)\\updater
+	mkdir -p output\\unicode
+	mkdir -p $(OBJDIR_UPDATER)\\updater
 
 after_updater: 
 
@@ -429,14 +429,14 @@ $(OBJDIR_UPDATER)\\updater\\version.o: updater\\version.rc
 	$(WINDRES) -i updater\\version.rc -J rc -o $(OBJDIR_UPDATER)\\updater\\version.o -O coff $(INC_UPDATER)
 
 clean_updater: 
-	cmd /c del /f $(OBJ_UPDATER) $(OUT_UPDATER)
-	cmd /c rd output\\unicode
-	cmd /c rd $(OBJDIR_UPDATER)\\updater
+	rm -rf $(OBJ_UPDATER) $(OUT_UPDATER)
+	rmdir -p output\\unicode
+	rmdir -p $(OBJDIR_UPDATER)\\updater
 
 before_hook: 
-	cmd /c "del output\hook.dll"
-	cmd /c if not exist output\\unicode md output\\unicode
-	cmd /c if not exist $(OBJDIR_HOOK)\\hook md $(OBJDIR_HOOK)\\hook
+	rm -f output\hook.dll
+	mkdir -p output\\unicode
+	mkdir -p $(OBJDIR_HOOK)\\hook
 
 after_hook: 
 
@@ -452,9 +452,9 @@ $(OBJDIR_HOOK)\\hook\\version.o: hook\\version.rc
 	$(WINDRES) -i hook\\version.rc -J rc -o $(OBJDIR_HOOK)\\hook\\version.o -O coff $(INC_HOOK)
 
 clean_hook: 
-	cmd /c del /f $(OBJ_HOOK) $(OUT_HOOK)
-	cmd /c rd output\\unicode
-	cmd /c rd $(OBJDIR_HOOK)\\hook
+	rm -rf $(OBJ_HOOK) $(OUT_HOOK)
+	rmdir -p output\\unicode
+	rmdir -p $(OBJDIR_HOOK)\\hook
 
 virtual_all: trayeverything ita eng por deu esp jpn chi cze updater hook
 
