@@ -2,8 +2,8 @@
 #include <windows.h>
 #include "version.rc"
 
-1 24 "updater\\updater.exe.Manifest"
-IDI_UPDATER ICON "updater\\updater.ico"
+1 24 "updater/updater.exe.Manifest"
+IDI_UPDATER ICON "updater/updater.ico"
 
 IDD_UPDATERDLG DIALOG 0,0,150,30
 STYLE DS_CENTER|WS_POPUP|WS_BORDER
