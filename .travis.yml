@@ -1,6 +1,17 @@
 language: cpp
 
+env:
+    - BINTRAY_USER=maxgalbu
+    - BINTRAY_FILENAME=TrayEverything-current.zip
+    - secure: "aKSJchNkeMMBcjfgYLdH/hNE3N58fYWAzFBj9y6or6ceKvsUmBYHuwBcw4U0+OtS1aw0OBiGheC1PV6aBoYmi8YRN7MNZhXSXVr53nuFu7mbY+AM0On7ok0g5XQWV8xULR0n3Pr4/XlOmP9CcODxKdTiBZDXgCwUDFOJR75FRXU="
+
 install: 
     sudo apt-get install mingw32
 
-script: make
+script:
+    make
+
+after_script:
+    - zip $BINTRAY_FILENAME output/unicode/*
+    - curl -T $BINTRAY_FILENAME -u$BINTRAY_USER:$BINTRAY_APIKEY \
+        https://api.bintray.com/content/$BINTRAY_USER/generic/TrayEverything/current/$BINTRAY_FILENAME
