@@ -1,9 +1,10 @@
 language: cpp
 
 env:
-    - BINTRAY_USER=maxgalbu
-    - BINTRAY_FILENAME=TrayEverything-current.zip
-    - secure: "aKSJchNkeMMBcjfgYLdH/hNE3N58fYWAzFBj9y6or6ceKvsUmBYHuwBcw4U0+OtS1aw0OBiGheC1PV6aBoYmi8YRN7MNZhXSXVr53nuFu7mbY+AM0On7ok0g5XQWV8xULR0n3Pr4/XlOmP9CcODxKdTiBZDXgCwUDFOJR75FRXU="
+    global:
+        - BINTRAY_USER=maxgalbu
+        - BINTRAY_FILENAME=TrayEverything-current.zip
+        - secure: "aKSJchNkeMMBcjfgYLdH/hNE3N58fYWAzFBj9y6or6ceKvsUmBYHuwBcw4U0+OtS1aw0OBiGheC1PV6aBoYmi8YRN7MNZhXSXVr53nuFu7mbY+AM0On7ok0g5XQWV8xULR0n3Pr4/XlOmP9CcODxKdTiBZDXgCwUDFOJR75FRXU="
 
 install: 
     sudo apt-get install mingw32
