@@ -15,5 +15,4 @@ script:
 after_script:
     - cd output/unicode
     - zip $BINTRAY_FILENAME ./*
-    - curl -T $BINTRAY_FILENAME -u$BINTRAY_USER:$BINTRAY_APIKEY \
-        "https://api.bintray.com/content/$BINTRAY_USER/generic/TrayEverything/current/$BINTRAY_FILENAME"
+    - curl -T $BINTRAY_FILENAME -u $BINTRAY_USER:$BINTRAY_APIKEY "https://api.bintray.com/content/$BINTRAY_USER/TrayEverything/current/$BINTRAY_FILENAME"
